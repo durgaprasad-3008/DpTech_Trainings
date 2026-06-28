@@ -29,3 +29,55 @@
 .animate-modal-enter {
   animation: modal-enter 0.3s ease-out;
 }
+
+/* Early Bird card animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 1px rgba(250, 204, 21, 0.25),
+      0 0 18px rgba(250, 204, 21, 0.15);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 0 1px rgba(250, 204, 21, 0.6),
+      0 0 35px rgba(250, 204, 21, 0.4);
+    border-color: rgba(250, 204, 21, 0.6);
+  }
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 2.8s ease-in-out infinite;
+}
+
+@keyframes pulse-scale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+}
+
+.animate-pulse-scale {
+  animation: pulse-scale 2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-glow-pulse,
+  .animate-pulse-scale {
+    animation: none;
+  }
+}

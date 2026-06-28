@@ -33,7 +33,7 @@ const Hero = () => {
       </style>
 
       <div className="absolute inset-0 bg-black bg-opacity-75"></div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-20 relative">
         <div className="text-center">
           <h1 className="text-3xl md:text-5xl font-bold mb-8 leading-snug">
             {title.split('').map((char, index) => (
