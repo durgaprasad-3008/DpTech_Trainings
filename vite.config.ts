@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: '/', // custom domain (dptechtrainings.durgaprasad.online) serves from root
+  base: './', // relative paths: works on github.io/DpTech_Trainings/ AND the custom domain root
  
   // define: {
   //   'import.meta.env.VITE_SUPABASE_URL': JSON.stringify('https://gcaeplteagvasyxxqczz.supabase.co'),
